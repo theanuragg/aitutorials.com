@@ -1,24 +1,43 @@
-import { Search, Paintbrush, MessageSquare, Code, FileText, Briefcase, Scale, ShoppingCart, Zap, PlayCircle, FileCode2, Users } from 'lucide-react'
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Badge } from "@/components/ui/badge"
-import { Card, CardContent } from "@/components/ui/card"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import {
+  Search,
+  Paintbrush,
+  MessageSquare,
+  Code,
+  FileText,
+  Briefcase,
+  Scale,
+  ShoppingCart,
+  Zap,
+  PlayCircle,
+  FileCode2,
+  Users,
+} from "lucide-react";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Badge } from "@/components/ui/badge";
+import { Card, CardContent } from "@/components/ui/card";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-background">
       <header className="border-b">
-        <div className="container flex h-16 items-center px-4 md:px-6">
+        <div className="container mx-auto flex h-16 items-center px-4 md:px-6">
           <Link href="/" className="font-bold text-2xl">
             AI Tutorials
           </Link>
           <nav className="ml-auto flex gap-4">
-            <Link href="/categories" className="text-sm font-medium hover:underline">
+            <Link
+              href="/categories"
+              className="text-sm font-medium hover:underline"
+            >
               Categories
             </Link>
-            <Link href="/popular" className="text-sm font-medium hover:underline">
+            <Link
+              href="/popular"
+              className="text-sm font-medium hover:underline"
+            >
               Popular
             </Link>
           </nav>
@@ -31,7 +50,8 @@ export default function Home() {
               What are you looking to do?
             </h1>
             <p className="mx-auto max-w-[600px] text-gray-500 md:text-xl/relaxed">
-              Get step-by-step AI tutorials for any task. Learn how to use AI tools effectively with our community-driven guides.
+              Get step-by-step AI tutorials for any task. Learn how to use AI
+              tools effectively with our community-driven guides.
             </p>
           </div>
           <div className="w-full max-w-2xl">
@@ -45,34 +65,64 @@ export default function Home() {
             </div>
           </div>
           <div className="flex flex-wrap justify-center gap-2">
-            <Badge variant="secondary" className="text-sm cursor-pointer hover:bg-muted">
+            <Badge
+              variant="secondary"
+              className="text-sm cursor-pointer hover:bg-muted"
+            >
               Make a brand logo
             </Badge>
-            <Badge variant="secondary" className="text-sm cursor-pointer hover:bg-muted">
+            <Badge
+              variant="secondary"
+              className="text-sm cursor-pointer hover:bg-muted"
+            >
               Generate a contract
             </Badge>
-            <Badge variant="secondary" className="text-sm cursor-pointer hover:bg-muted">
+            <Badge
+              variant="secondary"
+              className="text-sm cursor-pointer hover:bg-muted"
+            >
               Sell digital products
             </Badge>
-            <Badge variant="secondary" className="text-sm cursor-pointer hover:bg-muted">
+            <Badge
+              variant="secondary"
+              className="text-sm cursor-pointer hover:bg-muted"
+            >
               Write a business plan
             </Badge>
-            <Badge variant="secondary" className="text-sm cursor-pointer hover:bg-muted">
+            <Badge
+              variant="secondary"
+              className="text-sm cursor-pointer hover:bg-muted"
+            >
               Create an AI chatbot
             </Badge>
-            <Badge variant="secondary" className="text-sm cursor-pointer hover:bg-muted">
+            <Badge
+              variant="secondary"
+              className="text-sm cursor-pointer hover:bg-muted"
+            >
               Build a recommendation system
             </Badge>
-            <Badge variant="secondary" className="text-sm cursor-pointer hover:bg-muted">
+            <Badge
+              variant="secondary"
+              className="text-sm cursor-pointer hover:bg-muted"
+            >
               Train a custom AI model
             </Badge>
-            <Badge variant="secondary" className="text-sm cursor-pointer hover:bg-muted">
+            <Badge
+              variant="secondary"
+              className="text-sm cursor-pointer hover:bg-muted"
+            >
               Generate product descriptions
             </Badge>
-            <Badge variant="secondary" className="text-sm cursor-pointer hover:bg-muted">
+            <Badge
+              variant="secondary"
+              className="text-sm cursor-pointer hover:bg-muted"
+            >
               Create social media content
             </Badge>
-            <Badge variant="secondary" className="text-sm cursor-pointer hover:bg-muted">
+            <Badge
+              variant="secondary"
+              className="text-sm cursor-pointer hover:bg-muted"
+            >
               Design an AI workflow
             </Badge>
           </div>
@@ -140,11 +190,16 @@ export default function Home() {
             <TabsContent value="categories" className="mt-6">
               <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
                 {categories.map((category) => (
-                  <Link key={category.name} href={`/categories/${category.slug}`}>
+                  <Link
+                    key={category.name}
+                    href={`/categories/${category.slug}`}
+                  >
                     <Card className="hover:bg-muted/50 transition-colors">
                       <CardContent className="p-6">
                         <h3 className="font-semibold mb-2">{category.name}</h3>
-                        <p className="text-sm text-muted-foreground">{category.count} tutorials</p>
+                        <p className="text-sm text-muted-foreground">
+                          {category.count} tutorials
+                        </p>
                       </CardContent>
                     </Card>
                   </Link>
@@ -153,14 +208,21 @@ export default function Home() {
             </TabsContent>
           </Tabs>
         </div>
-        
+
         {/* New section: Learn how to make this website */}
         <div className="mt-24 bg-gray-100 rounded-lg p-8">
-          <h2 className="text-3xl font-bold mb-6 text-center">Learn How to Make This Website!</h2>
+          <h2 className="text-3xl font-bold mb-6 text-center">
+            Learn How to Make This Website!
+          </h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div>
-              <h3 className="text-xl font-semibold mb-4">Master AI-Powered Web Development</h3>
-              <p className="mb-4">Unlock the secrets behind this powerful AI tutorial platform. Our comprehensive course includes:</p>
+              <h3 className="text-xl font-semibold mb-4">
+                Master AI-Powered Web Development
+              </h3>
+              <p className="mb-4">
+                Unlock the secrets behind this powerful AI tutorial platform.
+                Our comprehensive course includes:
+              </p>
               <ul className="list-disc pl-5 mb-6 space-y-2">
                 <li>Step-by-step video tutorials</li>
                 <li>Full source code access</li>
@@ -170,15 +232,21 @@ export default function Home() {
               </ul>
               <div className="flex items-center space-x-4 mb-6">
                 <PlayCircle className="h-8 w-8 text-blue-500" />
-                <p className="text-lg font-medium">20+ hours of in-depth content</p>
+                <p className="text-lg font-medium">
+                  20+ hours of in-depth content
+                </p>
               </div>
               <div className="flex items-center space-x-4 mb-6">
                 <FileCode2 className="h-8 w-8 text-green-500" />
-                <p className="text-lg font-medium">Complete source code included</p>
+                <p className="text-lg font-medium">
+                  Complete source code included
+                </p>
               </div>
               <div className="flex items-center space-x-4">
                 <Users className="h-8 w-8 text-purple-500" />
-                <p className="text-lg font-medium">Join a community of AI enthusiasts</p>
+                <p className="text-lg font-medium">
+                  Join a community of AI enthusiasts
+                </p>
               </div>
             </div>
             <div className="flex flex-col justify-center items-center bg-white p-6 rounded-lg shadow-lg">
@@ -191,7 +259,7 @@ export default function Home() {
                 <li>✅ Monthly live coding sessions</li>
               </ul>
               <Link
-                href="https://gumroad.com/l/ai-tutorials-course"
+                href="https://sahil.gumroad.com/l/the-ai-tutorial"
                 className="bg-blue-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-700 transition-colors"
               >
                 Enroll Now and Build Your AI Future!
@@ -199,7 +267,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        
+
         <footer className="border-t mt-20">
           <div className="container flex flex-col items-center gap-4 py-10 md:h-24 md:flex-row md:py-0">
             <div className="flex flex-col items-center gap-4 px-8 md:flex-row md:gap-2 md:px-0">
@@ -223,7 +291,11 @@ export default function Home() {
                 className="rounded-2xl bg-black px-4 py-2 text-sm font-medium text-white hover:bg-gray-900"
               >
                 <div className="flex items-center gap-2">
-                  <svg viewBox="0 0 24 24" className="h-5 w-5 fill-current" aria-hidden="true">
+                  <svg
+                    viewBox="0 0 24 24"
+                    className="h-5 w-5 fill-current"
+                    aria-hidden="true"
+                  >
                     <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
                   </svg>
                   Follow on X
@@ -234,7 +306,7 @@ export default function Home() {
         </footer>
       </main>
     </div>
-  )
+  );
 }
 
 function TutorialCard({
@@ -242,11 +314,11 @@ function TutorialCard({
   categories,
   votes,
 }: {
-  title: string
-  categories: string[]
-  votes: number
+  title: string;
+  categories: string[];
+  votes: number;
 }) {
-  const IconComponent = getCategoryIcon(categories[0])
+  const IconComponent = getCategoryIcon(categories[0]);
   return (
     <Card className="hover:bg-muted/50 transition-colors">
       <CardContent className="p-6">
@@ -285,27 +357,27 @@ function TutorialCard({
         </div>
       </CardContent>
     </Card>
-  )
+  );
 }
 
 function getCategoryIcon(category: string) {
   switch (category.toLowerCase()) {
-    case 'design':
-      return Paintbrush
-    case 'marketing':
-      return MessageSquare
-    case 'development':
-      return Code
-    case 'writing':
-      return FileText
-    case 'business':
-      return Briefcase
-    case 'legal':
-      return Scale
-    case 'e-commerce':
-      return ShoppingCart
+    case "design":
+      return Paintbrush;
+    case "marketing":
+      return MessageSquare;
+    case "development":
+      return Code;
+    case "writing":
+      return FileText;
+    case "business":
+      return Briefcase;
+    case "legal":
+      return Scale;
+    case "e-commerce":
+      return ShoppingCart;
     default:
-      return Zap
+      return Zap;
   }
 }
 
@@ -316,5 +388,4 @@ const categories = [
   { name: "Writing", slug: "writing", count: 98 },
   { name: "Business", slug: "business", count: 87 },
   { name: "Legal", slug: "legal", count: 76 },
-]
-
+];
