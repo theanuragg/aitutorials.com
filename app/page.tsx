@@ -259,7 +259,7 @@ export default function Home() {
                 <li>✅ Monthly live coding sessions</li>
               </ul>
               <Link
-                href="https://sahil.gumroad.com/l/the-ai-tutorial"
+                href="https://sahil.gumroad.com/l/the-ai-tutorial?wanted=true"
                 className="bg-blue-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-700 transition-colors"
               >
                 Enroll Now and Build Your AI Future!
