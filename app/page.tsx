@@ -226,7 +226,7 @@ export default function Home() {
               <ul className="list-disc pl-5 mb-6 space-y-2">
                 <li>Step-by-step video tutorials</li>
                 <li>Full source code access</li>
-                <li>Exclusive Discord community</li>
+                <li>Exclusive Telegram community</li>
                 <li>Live Q&A sessions with experts</li>
                 <li>Certificate of completion</li>
               </ul>
@@ -255,7 +255,7 @@ export default function Home() {
               <ul className="text-sm mb-6 space-y-2">
                 <li>✅ Lifetime access to course materials</li>
                 <li>✅ Source code for this entire platform</li>
-                <li>✅ 1-year access to our Discord community</li>
+                <li>✅ 1-year access to our Telegram community</li>
                 <li>✅ Monthly live coding sessions</li>
               </ul>
               <Link
