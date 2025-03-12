@@ -16,6 +16,7 @@ import {
   Compass,
   MessageSquare,
   Twitter,
+  Github,
 } from "lucide-react";
 import Link from "next/link";
 import { useEffect } from "react";
@@ -79,6 +80,17 @@ export default function Home() {
               </Button>
               <Button variant="ghost" asChild>
                 <Link href="#contact">Contact</Link>
+              </Button>
+              <Button variant="ghost" asChild>
+                <a
+                  href="https://github.com/slavingia/aitutorials.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center"
+                >
+                  <Github className="mr-2 h-4 w-4" />
+                  GitHub
+                </a>
               </Button>
               <ThemeToggle />
             </nav>
