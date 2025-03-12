@@ -66,6 +66,16 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <Card>
               <CardHeader>
+                <CardTitle>PMing with o1 pro, v0, and DeepSeek-R1</CardTitle>
+                <CardDescription>Improved audio version for better product management with AI</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <YoutubeEmbed videoId="EBosnqXWxYI" title="PMing with o1 pro, v0, and DeepSeek-R1 (better audio)" />
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
                 <CardTitle>AI-Driven Product Discovery</CardTitle>
                 <CardDescription>Learn how to use AI to identify market opportunities</CardDescription>
               </CardHeader>
@@ -81,16 +91,6 @@ export default function Home() {
               </CardHeader>
               <CardContent>
                 <YoutubeEmbed videoId="dQw4w9WgXcQ" title="User Research with AI" />
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle>AI for Product Roadmapping</CardTitle>
-                <CardDescription>Use AI to prioritize features and plan your roadmap</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <YoutubeEmbed videoId="dQw4w9WgXcQ" title="AI for Product Roadmapping" />
               </CardContent>
             </Card>
           </div>
@@ -109,8 +109,8 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <Card>
               <CardHeader>
-                <CardTitle>Getting Started with AI Coding Assistants</CardTitle>
-                <CardDescription>Introduction to AI pair programming</CardDescription>
+                <CardTitle>Developing with Devin</CardTitle>
+                <CardDescription>Learn how to use Devin for AI-assisted development</CardDescription>
               </CardHeader>
               <CardContent>
                 <YoutubeEmbed videoId="7UIYiOGtC8Y" title="Developing with Devin" />
@@ -119,21 +119,31 @@ export default function Home() {
 
             <Card>
               <CardHeader>
-                <CardTitle>Building React Apps with AI</CardTitle>
-                <CardDescription>Learn to build modern React applications with AI assistance</CardDescription>
+                <CardTitle>Using Cursor + Claude 3.5 Sonnet + Tailwind</CardTitle>
+                <CardDescription>Ship 20x faster with modern AI-assisted development tools</CardDescription>
               </CardHeader>
               <CardContent>
-                <YoutubeEmbed videoId="dQw4w9WgXcQ" title="Building React Apps with AI" />
+                <YoutubeEmbed videoId="bEU15KXIAVk" title="Using Cursor + Claude 3.5 Sonnet + Tailwind to ship 20x faster" />
               </CardContent>
             </Card>
 
             <Card>
               <CardHeader>
-                <CardTitle>AI-Powered Code Refactoring</CardTitle>
-                <CardDescription>Use AI to improve and optimize your existing codebase</CardDescription>
+                <CardTitle>Coding with Cursor: Session 3</CardTitle>
+                <CardDescription>Advanced techniques for coding with AI assistance</CardDescription>
               </CardHeader>
               <CardContent>
-                <YoutubeEmbed videoId="dQw4w9WgXcQ" title="AI-Powered Code Refactoring" />
+                <YoutubeEmbed videoId="XuCRzqgD_ns" title="Coding with Cursor: Session 3" />
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle>Coding with Cursor: Session 2</CardTitle>
+                <CardDescription>Continuing your journey with AI-assisted development</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <YoutubeEmbed videoId="mY6oV7tZUi0" title="Coding with Cursor: Session 2" />
               </CardContent>
             </Card>
           </div>
