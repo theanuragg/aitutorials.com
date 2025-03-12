@@ -16,17 +16,33 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "AI Tutorials",
-  description: "Step-by-step AI tutorials for any task",
+  title: "AI Tutorials - Learn to Build with AI",
+  description:
+    "Master the art of building with AI through our comprehensive tutorials covering product management, coding, and design.",
+  openGraph: {
+    title: "AI Tutorials - Learn to Build with AI",
+    description:
+      "Master the art of building with AI through our comprehensive tutorials covering product management, coding, and design.",
+    url: "https://aitutorials.com",
+    siteName: "AI Tutorials",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "AI Tutorials - Learn to Build with AI",
+    description:
+      "Master the art of building with AI through our comprehensive tutorials covering product management, coding, and design.",
+    creator: "@shl",
+  },
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head />
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
