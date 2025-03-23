@@ -18,8 +18,7 @@ import {
   Twitter,
   Github,
   Menu,
-  X,
-  Home,
+  X, 
   Info,
   Mail,
 } from "lucide-react";
