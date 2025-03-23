@@ -1,4 +1,4 @@
-"use client";
+'use client'
 
 import { Button } from "@/components/ui/button";
 import {
@@ -19,6 +19,7 @@ import {
   Github,
   Menu,
   X,
+  Home,
   Info,
   Mail,
 } from "lucide-react";
@@ -27,7 +28,7 @@ import { useEffect, useState } from "react";
 
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+  
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -82,35 +83,19 @@ export default function Home() {
               AITutorials.com
             </span>
           </Link>
-
+          
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-1">
-            <Button
-              variant="ghost"
-              asChild
-              className="hover:bg-primary/10 transition-colors"
-            >
+            <Button variant="ghost" asChild className="hover:bg-primary/10 transition-colors">
               <Link href="#tutorials">Tutorials</Link>
             </Button>
-            <Button
-              variant="ghost"
-              asChild
-              className="hover:bg-primary/10 transition-colors"
-            >
+            <Button variant="ghost" asChild className="hover:bg-primary/10 transition-colors">
               <Link href="#about">About</Link>
             </Button>
-            <Button
-              variant="ghost"
-              asChild
-              className="hover:bg-primary/10 transition-colors"
-            >
+            <Button variant="ghost" asChild className="hover:bg-primary/10 transition-colors">
               <Link href="#contact">Contact</Link>
             </Button>
-            <Button
-              variant="ghost"
-              asChild
-              className="hover:bg-primary/10 transition-colors"
-            >
+            <Button variant="ghost" asChild className="hover:bg-primary/10 transition-colors">
               <a
                 href="https://github.com/slavingia/aitutorials.com"
                 target="_blank"
@@ -123,64 +108,39 @@ export default function Home() {
             </Button>
             <ThemeToggle />
           </nav>
-
+          
           {/* Mobile Menu Button */}
           <div className="flex md:hidden items-center space-x-2">
             <ThemeToggle />
-            <Button
-              variant="ghost"
-              size="icon"
-              onClick={toggleMenu}
-              className="hover:bg-primary/10 transition-colors"
-            >
-              {isMenuOpen ? (
-                <X className="h-5 w-5" />
-              ) : (
-                <Menu className="h-5 w-5" />
-              )}
+            <Button variant="ghost" size="icon" onClick={toggleMenu} className="hover:bg-primary/10 transition-colors">
+              {isMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
             </Button>
           </div>
         </div>
-
+        
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <div className="md:hidden bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80 border-b">
             <div className="container mx-auto px-4 py-3 space-y-1">
-              <Button
-                variant="ghost"
-                asChild
-                className="w-full justify-start hover:bg-primary/10 transition-colors"
-              >
+              <Button variant="ghost" asChild className="w-full justify-start hover:bg-primary/10 transition-colors">
                 <Link href="#tutorials" onClick={() => setIsMenuOpen(false)}>
                   <Compass className="mr-2 h-4 w-4" />
                   Tutorials
                 </Link>
               </Button>
-              <Button
-                variant="ghost"
-                asChild
-                className="w-full justify-start hover:bg-primary/10 transition-colors"
-              >
+              <Button variant="ghost" asChild className="w-full justify-start hover:bg-primary/10 transition-colors">
                 <Link href="#about" onClick={() => setIsMenuOpen(false)}>
                   <Info className="mr-2 h-4 w-4" />
                   About
                 </Link>
               </Button>
-              <Button
-                variant="ghost"
-                asChild
-                className="w-full justify-start hover:bg-primary/10 transition-colors"
-              >
+              <Button variant="ghost" asChild className="w-full justify-start hover:bg-primary/10 transition-colors">
                 <Link href="#contact" onClick={() => setIsMenuOpen(false)}>
                   <Mail className="mr-2 h-4 w-4" />
                   Contact
                 </Link>
               </Button>
-              <Button
-                variant="ghost"
-                asChild
-                className="w-full justify-start hover:bg-primary/10 transition-colors"
-              >
+              <Button variant="ghost" asChild className="w-full justify-start hover:bg-primary/10 transition-colors">
                 <a
                   href="https://github.com/slavingia/aitutorials.com"
                   target="_blank"
@@ -210,11 +170,7 @@ export default function Home() {
               </p>
             </div>
             <div>
-              <Button
-                asChild
-                size="lg"
-                className="hover:bg-primary/90 hover:scale-105 transition-all duration-200 shadow-md"
-              >
+              <Button asChild size="lg" className="hover:bg-primary/90 hover:scale-105 transition-all duration-200 shadow-md">
                 <Link href="#tutorials">
                   Explore Tutorials <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
@@ -412,11 +368,7 @@ export default function Home() {
             Have questions or suggestions? I&apos;d love to hear from you!
           </p>
           <div>
-            <Button
-              size="lg"
-              asChild
-              className="hover:bg-primary/90 hover:scale-105 transition-all duration-200 shadow-md"
-            >
+            <Button size="lg" asChild className="hover:bg-primary/90 hover:scale-105 transition-all duration-200 shadow-md">
               <a
                 href="https://twitter.com/messages/compose?recipient_id=shl"
                 target="_blank"
@@ -430,7 +382,7 @@ export default function Home() {
           </div>
         </section>
       </div>
-
+      
       {/* Footer */}
       <footer className="w-full py-6 bg-muted/50">
         <div className="container px-4 md:px-6 mx-auto">
@@ -441,8 +393,8 @@ export default function Home() {
               </p>
             </div>
             <div className="flex items-center space-x-4">
-              <a
-                href="https://twitter.com/shl"
+              <a 
+                href="https://twitter.com/shl" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
@@ -450,8 +402,8 @@ export default function Home() {
                 <Twitter className="h-5 w-5" />
                 <span className="sr-only">Twitter</span>
               </a>
-              <a
-                href="https://github.com/slavingia/aitutorials.com"
+              <a 
+                href="https://github.com/slavingia/aitutorials.com" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
